@@ -68,7 +68,7 @@ export const ScanningAnimation = ({ onComplete }) => {
   const currentStep = scanningSteps[stepIndex];
 
   return (
-    <div className="w-full h-full flex flex-col items-center justify-end relative text-white bg-black/80 pb-20 pointer-events-none">
+    <div className="w-full h-full flex flex-col items-center justify-end relative text-white bg-black/60 pb-20 pointer-events-none">
       {/* 🔹 Local styles for dot float + glowy pulse */}
       <style>{`
         @keyframes scanner-dot-float {
@@ -170,7 +170,7 @@ export const ScanningAnimation = ({ onComplete }) => {
 
       {/* Text + Icon card with pulsing glow */}
       {currentStep && (
-        <div className="relative z-10 w-[360px] max-w-[90vw]">
+        <div className="relative z-10 w-[360px] max-w-[90vw] scale-70">
           {/* 🔮 Pulsing glow behind the card */}
           <div className="glow-wrapper">
             <div className="glow-bg" />
