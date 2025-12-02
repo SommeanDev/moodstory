@@ -213,7 +213,7 @@ const Story = () => {
           const result = await handleSubmit();
           console.log("result", result)
           // ✅ Only proceed if backend returned success and story data
-          if (result && result.status === "true") {
+          if (result && (result.status === "true" || result.status === true || result.success)) {
             // Prepare story data for saving
             const storyData = {
               userId: result.userId,
